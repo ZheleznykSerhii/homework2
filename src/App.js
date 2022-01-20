@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React from 'react'
+import Task5 from './task5/task5'
+import ExchangeContainer from './task5/feedbackstatContainer'
+import FeedbackStatFunc from './task5/feedbackststFunction'
 
-function App() {
+let App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Task5 />  Варіант ЛИШЕ з класовою компонентою і її локальним стейтом*/}
+
+      {/*  <ExchangeContainer /> Варіант с КЛАСОВОЮ компонентою у яку передаємо дані з Редаксу.*/}
+      <FeedbackStatFunc />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
